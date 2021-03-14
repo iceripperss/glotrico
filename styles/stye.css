@@ -1,128 +1,295 @@
- a{
-    text-decoration: none;
-}
-p{
-margin:0;
-padding:3px 0 0 0;
-}
-hr{
-    padding:0;
-    margin:0;
-}
+/* body */
 body{
-    font-family: 'Roboto', sans-serif;
     margin:0px;
-    background-color: rgb(199, 199, 199);
+    background-color: #D8D6D1;
+    font-family: Roboto, "Open Sans";
 }
-
+/* header */
 header{
     display: flex;
-    width:100%;
+    width: 100%;
+    max-height: 160px;
     position: fixed;
+    z-index: 50;
     top:0;
     left:0;
-    z-index: 3;
 }
-
-.header_section1 , .header_section3{
-    background-color:rgb(255, 255, 255);
-    width:20%;
-    display: flex;
-    border-radius: 33px;
-    justify-content: space-between;
-    align-items: center;
+/* main */
+main{
+    position: relative;
+    top: 80px;
+    z-index: 0;
+}
+/* left navigation part */
+.left_nav{
+    width: 25%;
     height: 80px;
-}
-
-.header_section2{
-    background-color:rgb(255, 255, 255);
-    width:60%;
-    
+    background-color: #FFFFFF;
     border-radius: 33px;
-    
-    
-}
-
-.just_row{
     display: flex;
-    height: 80px;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-}
-
-.first_row{
-    font-size: 10px;
-}
-
-.header_element
-{
-    padding: 10px;
-}
-
-.header_logo{
-    font-weight:bold;
-    font-size: 20px;
+    border: 1px solid #DBC3AF;
+    
 }
 
 .header_search{
-background-color:rgb(219, 219, 219);
-border-radius: 33px;
-margin:10px 15px 10px 0px;
-font-size: 10px;
+    width: 100px;
+    height: 60px;
+    border-radius: 33px;
+    background-color: #E9E2D2;
+
+    font-weight: bold;
+    font-size: 10px;
+    color: #DBC3AF;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* middle navigation part */
+.middle_nav{
+    width: 58%;
+    height: 160px;
+    background-color: #FFFFFF;
+    border-radius: 33px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #DBC3AF;
+}
+.col{
+    height: 100px;
+    width: 220px;
+    position: relative;
+    left: 80px;
+    top: 12px;
+    align-items: center;
+}
+.text_first_row{
 font-weight: bold;
-color:#DBC3AF;
+font-size: 10px;
 }
-
-.header_navigation{
-    
+.city{
+    font-size: 24px;
     font-weight: bold;
-    margin-left:300px;
-   
+    top:-2px;
+    position: relative;
 }
-.header_navigation1{
-    margin-left:60px;
-}
-
-.header_navigation4{
-    margin-left:60px;
+.dates{
+    font-size: 18px;
     font-weight: bold;
-    font-size:24px;
 }
-
-.header_navigation5{
+.select{
+    font-size: 18px;
     font-weight: bold;
-    font-size:18px;
-}
-
-.header_navigation6{
-    font-weight:bold;
-    font-size:18px;
     color: #15B38A;
-   
+    
 }
-.header_login{
-    font-size:14px;
-    font-weight: regular;
+.city,.dates,.select{
+    display: inline-block;
+    vertical-align: bottom;
+    margin:30px 0 0 0;
+    line-height: 25px;
 }
 
 
-
-.first_page{
-    margin-top: 80px;
- 
+.mid_search{
+    order: 999;
+    margin-left: auto;
+    position: relative;
+    top: 80px;
+    right: 10px;
+}
+/* right navigation part */
+.right_nav{
+    width: 17%;
+    height: 80px;
+    background-color: #FFFFFF;
     border-radius: 33px;
-    height:720px;
-    background-color:lightcoral; 
-    width:100%;
-
-} 
-.video_block{
-    border-radius: 33px;
-    height:560px;
-    background-color:rgb(255, 255, 255); 
-    width:100%;
+    border: 1px solid #DBC3AF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.p_login_registration{
+    margin:0;
+    font-size: 14px;
+}
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+    padding: 0px 15px;
 }
 
-main{
-    display: block;
+@media (max-width:1320px){
+    .container{
+        max-width: 970px;
+    }
+
+}
+@media (max-width: 992px){
+    .container{
+        max-width:750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
+}
+
+
+/* first row */
+.first_row{
+    background-image: url(../images/Img.png);
+    background-repeat: no-repeat;
+    background-color: rgb(109, 33, 80);
+    background-size: cover;
+    border-radius: 33px;
+    background-position: center center;
+    height: 720px;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.first_row p{
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    line-height: 90px;
+    margin: 0px;
+}
+.language{
+    position: absolute;
+    top: 35px;
+    left: 55px;
+}
+/* Button */
+.play_button {
+    background-color: #1A3580;
+    border: none;
+    color: white;
+    display: flex;
+    position: relative;
+    top: -200px;
+    left: 330px;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.search_button{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.triangular{
+    width: 0; 
+    height: 0;
+    margin: 0 auto;
+    border-top: 15px solid transparent;
+    border-left: 24px solid #15B38A;
+    border-bottom: 15px solid transparent; 
+    border-right: 24px;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+.middle_nav hr{
+    position: relative;
+    top: 80px;
+    margin:0;
+}
+/* second row */
+.second_row{
+    height: 560px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 33px;
+}
+.p_popular{
+    margin:0;
+    padding-top:40px;
+    font-weight: bold;
+    font-size: 32px;
+}
+.popular_cities{
+    display: flex;
+    margin-left: 285px;
+}
+.city_name{
+    font-weight: bold;
+    font-size: 24px;
+}
+.country_name{
+    font-weight: normal;
+    font-size: 18px;
+}
+.city{
+    padding-left:5px;
+}
+
+.blue_arrows{
+    display:flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin:0 auto;
+    padding:10px;
+    position: relative;
+    top:-270px;
+}
+
+/* third row */
+.third_row{
+    height: 1200px;
+    width: 100%;
+    border-radius: 33px;
+    background-color: #ffffff;
+}
+
+
+
+.content_box{
+    margin:0px 30px 0px 0px;
+}
+
+
+.box1{
+    
+    flex: 0 1 27%;
+    height: 300px;
+    background-color: rgb(243, 198, 144);
+}
+
+.box2{
+    flex: 0 1 27%;
+    height: 300px;
+    background-color: rgb(212, 167, 111);
+}
+
+.box3{
+    flex: 0 1 12%;
+    height: 300px;
+    background-color: rgb(168, 130, 83);
+}
+
+.box4{
+    flex: 0 1 30%;
+    height: 300px;
+    background-color: rgb(133, 97, 53);
+}
+
+footer{
+    height: 320px;
+    width: 100%;
+    border-radius: 33px;
+    background-color: #1A3580;
 }

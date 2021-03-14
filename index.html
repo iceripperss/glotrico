@@ -3,43 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/stye.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Glotrico</title>
 </head>
 <body>
-    <header>
-       <div class="header_section1">
-           <div class="header_element header_logo"><a href="#" class="logo"> <img src="images/Oval.png" alt="" width="40px" height="auto"> <img src="images/Combined Shape Copy.png" alt="" height="35px" width="auto"></a></div>
-            <div class="header_element header_search"> SEARCH <img src="images/icon.png" alt="" height="27px" width="auto"></div>
-       </div>
-       <div class="header_section2">
-           <!-- <div class="first_row"> -->
-            <div class="just_row first_row">   
-            <div class="header_element header_navigation header_navigation1"><img src="images/Location.png" alt="" width="22px" height="auto"><p>DIRECTION</p></div>
-            <div class="header_element header_navigation header_navigation2"><img src="images/Calendar.png" alt="" height="30px" width="auto"><p>CHECK IN/OUT</p></div>
-            <div class="header_element header_navigation header_navigation3"><img src="images/Options.png" alt="" height="29px" width="auto"><p>OPTIONS</p></div>
+<header class="header" id="header">
+    <nav class="left_nav">
+<div class="header_logo"><img src="images/Oval.png" alt=""><img src="images/Combined Shape Copy.png" alt=""></div>
+<div class="header_search">SEARCH<img src="images/icon.png" alt=""></div>
+    </nav>
+    <nav class="middle_nav">
+        <div class="direction col">
+            <img src="images/Location.png" alt="" height="30px" width="auto">
+            <p class="text_first_row">DIRECTION</p>
+            <p class="city">Kyiv</p>
         </div>
-        <hr>
-        <div class="just_row second_row">
-            <div class="header_element header_navigation header_navigation4">Kyiv</div>
-        <div class="header_element header_navigation header_navigation5">Dec 21 <img src="images/arrow.png" alt="" height="10px" width="auto"> Dec 21</div>
-        <div class="header_element header_navigation header_navigation6">Select</div>
-        <div class="header_element header_navigation "><img src="images/Iconsearch.png" alt=""></div>
+        <div class="checkin col">
+            <img src="images/Calendar.png" alt=""  height="30px" width="auto">
+            <p class="text_first_row">CHECK IN / OUT</p>
+            <p class="dates">Dec 12 <img src="images/arrow.png" alt=""> Dec 21</p>
+        </div>
+        <div class="options col">
+            <img src="images/Options.png" alt=""  height="30px" width="auto">
+            <p class="text_first_row">OPTIONS</p>
+            <p class="select">Select</p>
+        </div>
+        
+        <div class="mid_search"><img src="images/Iconsearch.png" alt=""></div> <!--это кнопка, что она делает?-->
+    </nav>
+    <nav class="right_nav">
+        <p class="p_login_registration">Login/<br>Registration</p>
+        <img src="images/Group 2 Copy.png" alt="" height="30px" width="auto">
+    </nav>
+</header>
+<main class="main" id="main">
+    <div class="first_row">
+        <div class="language"><img src="images/Language.png" alt=""></div>
+        <div class="travel_smarter"> 
+        <p id="travel">Travel</p>
+        <p id="smarter">smarter</p>
+        <button class="play_button"><figure class="triangular"></figure></button>
     </div>
-            <!-- </div>
-           <div class="second_row"></div> -->
-       </div>
-       <div class="header_section3">
-           <div class="header_element header_login">Login/<br>Registration</div>
-           <div class="header_element header_icon"><img src="images/Group 2 Copy.png" alt=""></div>
-       </div>
-   </header>
-   <main>
-   <div class="first_page"></div>
-   <div class="video_block"></div>
-</main> 
+    </div>
+    <div class="second_row">
+        <div class="container">
+            <p class="p_popular">Popular today</p>
+            
+        </div>
+        <div class="popular_cities">
+            <div class="city">
+                <img src="images/Bitmap.png" alt="" width="420px" height="280px">
+                <p class="city_name">Boston</p>
+                <p class="country_name">USA</p>
+            </div>
+            <div class="city">
+                <img src="images/Bitmapkoln.png" alt="" width="420px" height="280px">
+                <p class="city_name">Keln</p>
+                <p class="country_name">GERMANY</p>
+            </div>
+            <div class="city">
+                <img src="images/Bitmap.png" alt="" width="420px" height="280px">
+                <p class="city_name">Toronto</p>
+                <p class="country_name">CANADA</p>
+            </div>
+            <div class="city">
+                <img src="images/smallbitmap.png" alt="" width="90px" height="280px">
+            </div>
+        </div>
+        <div class="blue_arrows"><img src="images/left.png" alt=""><img src="images/right.png" alt="" ></div>
+
+    </div>
+<div class="third_row"><div class="container">
+    <div class="box1 content_box"></div>
+    <div class="box2 content_box"></div>
+    <div class="box3 content_box"></div>
+    <div class="box4 content_box"></div>
+</div>
+<footer class="footer" id="footer"></footer>
+</div>
+</main>
 </body>
 </html>
